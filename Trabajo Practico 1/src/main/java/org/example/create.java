@@ -61,7 +61,8 @@ public class create {
         String table= "CREATE TABLE Factura("+
                 "idFactura INT,"+
                 "idCliente INT," +
-                "PRIMARY KEY(idFactura));";
+                "PRIMARY KEY(idFactura)," +
+                "FOREIGN KEY (idCliente) REFERENCES Cliente(idCliente));";
         conn.prepareStatement(table).execute();
         conn.commit();
     }
