@@ -23,22 +23,22 @@ public class DaoMySqlFactory extends DaoFactory{
     }
 
     @Override
-    public TiendaDao getClienteDao() {
+    public ClienteDao getClienteDao() {
         return new ClienteDao();
     }
 
     @Override
-    public TiendaDao getFacturaDao() {
+    public FacturaDao getFacturaDao() {
         return new FacturaDao();
     }
 
     @Override
-    public TiendaDao getFacturaPDao() {
+    public FacturaProductoDao getFacturaPDao() {
         return new FacturaProductoDao();
     }
 
     @Override
-    public TiendaDao getProductoDao() {
+    public ProductoDao getProductoDao() {
         return new ProductoDao();
     }
 }

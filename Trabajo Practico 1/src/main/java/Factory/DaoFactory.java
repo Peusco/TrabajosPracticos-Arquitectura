@@ -1,6 +1,6 @@
 package Factory;
 
-import Dao.TiendaDao;
+import Dao.*;
 
 public abstract class DaoFactory {
 
@@ -8,10 +8,10 @@ public abstract class DaoFactory {
     public static final int DERBY_JDBC = 2;
     public static final int JPA_HIBERNATE = 3;
 
-    public abstract TiendaDao getClienteDao();
-    public abstract TiendaDao getFacturaDao();
-    public abstract TiendaDao getFacturaPDao();
-    public abstract TiendaDao getProductoDao();
+    public abstract ClienteDao getClienteDao();
+    public abstract FacturaDao getFacturaDao();
+    public abstract FacturaProductoDao getFacturaPDao();
+    public abstract ProductoDao getProductoDao();
 
 
     public static DaoFactory getDaoFactory(int f){
